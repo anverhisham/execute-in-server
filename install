@@ -1,0 +1,12 @@
+#!/bin/bash
+## Script to install UNIX tools 'exs'
+##    	Execute as follows,
+##		sudo ./install;
+
+## -Add Executable permission to the scripts
+chmod a+x exs
+## -Moving commands scripts to system directories
+sudo cp exs /usr/local/bin/;
+## -Moving man pages to system directories
+mkdir -p /usr/local/share/man/man1/;
+sudo cp exs.1.gz /usr/local/share/man/man1/;

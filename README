@@ -1,0 +1,26 @@
+README for the UNIX tool exs
+=========================
+
+-DESCRIPTION
+
+	This tool helps you to work in Server just like your local machine.	This tool run BASH commands in server after copying certain files to server, and then move the results back to local machine.
+
+SEE MAN PAGE FOR MORE INFO.
+
+
+-EXAMPLES
+	exs --server bob@10.1.0.26 --executeCommand "ls ~"
+		List all FILES/FOLDERS names in home directory of bob in server '10.1.0.26'
+
+	exs --server bob@10.1.0.26 --executeCommand "./script1.sh"
+		Copy  all FILES/FOLDERS in current folder to server, execute script1.sh in Server, Move all copied FILES/FOLDERS back to local machine.
+
+
+-INSTALLATION
+  	Execute install script.
+		sudo ./install;
+
+
+-REQUIREMENT
+	LINUX/UNIX machine with Perl 5 installed.
+
